@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-gem 'bootstrap'
+gem 'bootstrap', ">= 4.3.1"
 gem 'autoprefixer-rails'
 gem 'jquery-rails'
 # Use Capistrano for deployment
