@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :usuarios
 	#get '/losamo', to: 'login#index'
   	
   	resources :hashts

@@ -1,5 +1,6 @@
 class Usuario < ApplicationRecord
-	has_many :posts
+  has_secure_password
+  has_many :posts
 
     validates(:nombre,   presence: true, length: { maximum: 20 })
     validates(:username, presence: true, length: { maximum: 20 }, uniqueness: { case_sensitive: false })

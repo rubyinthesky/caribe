@@ -16,7 +16,8 @@ class UsuariosTest < ApplicationSystemTestCase
 
     fill_in "Email", with: @usuario.email
     fill_in "Nombre", with: @usuario.nombre
-    fill_in "Password", with: @usuario.password
+    fill_in "Password", with: 'secret'
+    fill_in "Password confirmation", with: 'secret'
     fill_in "Tipo", with: @usuario.tipo
     fill_in "Username", with: @usuario.username
     click_on "Create Usuario"
@@ -31,7 +32,8 @@ class UsuariosTest < ApplicationSystemTestCase
 
     fill_in "Email", with: @usuario.email
     fill_in "Nombre", with: @usuario.nombre
-    fill_in "Password", with: @usuario.password
+    fill_in "Password", with: 'secret'
+    fill_in "Password confirmation", with: 'secret'
     fill_in "Tipo", with: @usuario.tipo
     fill_in "Username", with: @usuario.username
     click_on "Update Usuario"
