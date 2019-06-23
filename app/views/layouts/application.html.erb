@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caribe</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application' %>
+    <%= stylesheet_link_tag    'fontawesome-free/css/all.min.css' %>
+    <%= stylesheet_link_tag    'agency.min.css' %>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body id="page-top">
+
+    <%= yield %>
+
+    <%= javascript_include_tag "application" %>
+    <!-- Plugin JavaScript -->
+    <%= javascript_include_tag "jquery.easing.min.js" %>
+    <%= javascript_include_tag "jqBootstrapValidation.js" %>
+    <%= javascript_include_tag "contact_me.js" %>
+    <%= javascript_include_tag "agency.min.js" %>
+  </body>
+</html>
