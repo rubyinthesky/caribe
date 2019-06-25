@@ -1,15 +1,15 @@
-<% if current_user %>
+<!-- <% if current_user %>
   Logged in as <%= current_user.username %>.
   <%= link_to "Log Out", logout_path %>
 <% else %>
   <%= link_to "Sign Up", signup_path %> or 
   <%= link_to "Log In", login_path %>
 <% end %><p id="notice"><%= notice %></p>
-
+-->
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Caribe Films</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">CARIBE FILMS</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -36,13 +36,12 @@
     </div>
   </nav>
 
+<br/><br/><br/><br/>
   <!-- Header -->
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-lead-in">¡Bienvenidx!</div>
-        <div class="intro-heading text-uppercase">Es un gusto que estés aquí</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">¡Quiero ver más!</a>
+
       </div>
     </div>
   </header>
@@ -52,15 +51,15 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Servicios</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 class="section-heading text-uppercase" style="font-family:'Sifonn Basic Outline';">Servicios</h2>
+          <h3 class="section-subheading text-muted">¡La calidad es primero!</h3>
         </div>
       </div>
       <div class="row text-center">
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            <i class="fas fa-hashtag fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Gestión de redes sociales</h4>
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
@@ -68,7 +67,7 @@
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+            <i class="fas fa-palette fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Diseño Gráfico</h4>
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
@@ -76,7 +75,7 @@
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+            <i class="fas fa-camera-retro fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Fotografía</h4>
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
@@ -289,7 +288,7 @@
         <div class="col-sm-6">
           <div class="team-member">
 
-            <%= image_tag "team/1.jpg",:class=>"mx-auto rounded-circle"%>
+            <%= image_tag "team/steph.png",:class=>"mx-auto rounded-circle"%>
             <h4>Estephany Bracho</h4>
             <p class="text-muted">Puedes llamarme Steph. Soy diseñador gráfico, me he especializado en wordpress, en el marketing digital y social media management. Soy Venezolana y actualmente me encuentro en República Dominicana. Tengo 30 años pero miren mi cara, soy comeaño.</p>
             <ul class="list-inline social-buttons">
@@ -308,7 +307,7 @@
         </div>
         <div class="col-sm-6">
           <div class="team-member">
-            <%= image_tag "team/2.jpg",:class=>"mx-auto rounded-circle"%>
+            <%= image_tag "team/tony.png",:class=>"mx-auto rounded-circle"%>
             <h4>Anthony Perdomo</h4>
             <p class="text-muted">Puedes llamarme Tony. Soy fotógrafo profesional. Soy Venezolano, he vivido mucho tiempo fuera de mi país y he aprendido tal y tal cosa de mi carrera profesional.</p>
             <ul class="list-inline social-buttons">
