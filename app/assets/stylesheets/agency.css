@@ -10,10 +10,10 @@ font-weight: normal;
 src: local('Sifonn Pro'), url('SIFONN_PRO.woff') format('woff');
 }
 @font-face {
-font-family: 'Sifonn Basic Outline';
+font-family: 'Sifonn';
 font-style: normal;
 font-weight: normal;
-src: local('Sifonn Basic Outline'), url('SIFONN_BASIC_OUTLINE.otf') format('otf');
+src: local('Sifonn'), url('SIFONN_BASIC_OUTLINE.otf') format('otf');
 }
 
 body {

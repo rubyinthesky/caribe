@@ -5,5 +5,5 @@ class Post < ApplicationRecord
     validates(:fecha,              presence: true)
     validates(:url_imagen,         presence: true)
     validates(:id_usuario_creador, presence:true)
-      t.text :contenido
+    validates(:contenido,          presence:true)
 end
