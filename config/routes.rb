@@ -51,10 +51,7 @@ Rails.application.routes.draw do
 #                   logout GET    /logout(.:format)                                                                        sessions#destroy
 #                     root GET    /                                                                                        landing#index
 #
-  	get 'sessions/new'
-  	get 'sessions/create'
-  	get 'sessions/destroy'
-  	resources :usuarios
+
 	#get '/losamo', to: 'login#index'
   	
   	resources :hashts
@@ -62,8 +59,9 @@ Rails.application.routes.draw do
   	resources :posts
   	resources :usuarios
 
-	resources :sessions, only: [:new, :create, :destroy]
-	get 'signup', to: 'usuarios#new', as: 'signup'
+	  resources :sessions, only: [:new, :create, :destroy]
+    post 'login', to: 'sessions#create', as: 'sessions_create'
+	  get 'signup', to: 'usuarios#new', as: 'signup'
   	get 'login', to: 'sessions#new', as: 'login'
   	get 'logout', to: 'sessions#destroy', as: 'logout'
 

@@ -1,5 +1,7 @@
 class UsuariosController < ApplicationController
   before_action :set_usuario, only: [:show, :edit, :update, :destroy]
+  before_action :logged_in_user, only: [:edit, :update]
+  before_action :correct_user,   only: [:edit, :update]
 
   # GET /usuarios
   # GET /usuarios.json
@@ -71,4 +73,19 @@ class UsuariosController < ApplicationController
     def usuario_params
       params.require(:usuario).permit(:nombre, :username, :password, :password_confirmation, :email, :tipo)
     end
+
+    # Confirms a logged-in user.
+    def logged_in_user
+      unless logged_in?
+        flash[:danger] = "Please log in."
+        redirect_to login_url
+      end
+    end
+
+    # Confirms the correct user.
+    def correct_user
+      @user = Usuario.find(params[:id])
+      redirect_to(root_url) unless current_user?(@user)
+    end
+
 end
